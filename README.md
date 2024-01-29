@@ -1,4 +1,4 @@
-# Fee & Payments Slack help bot 
+# Capability Onboarding Slack help bot 
 
 Listens for new posts in a designated Slack channel and raises a coresponding request in Jira.
 
@@ -51,7 +51,7 @@ Running the application requires the following tools to be installed in your env
 You need to create a Slack App as detailed in the steps above. For development purposes, this will have to be created in a new Slack workspace.
 You will also need the JIRA details. For development purposes, these values can be found in the "env.template.txt" file for the HMCTS Jira SBOX Project.
 
-Set the relevant environment variables defined in [env.template.txt](env.template.txt) based on above steps.
+Set the relevant environment variables defined in [env.template.txt](env) based on above steps.
 
 ## Running the application
 

@@ -51,10 +51,6 @@ function helpRequestRaised({
     priority,
     environment,
     references,
-    ccdReferences,
-    rcReferences,
-    replicateSteps,
-    testAccount,
     jiraId
 }) {
     return [
@@ -295,7 +291,7 @@ function openHelpRequestBlocks() {
     return {
         "title": {
             "type": "plain_text",
-            "text": "F&P Support request"
+            "text": "COT Support Request"
         },
         "submit": {
             "type": "plain_text",
@@ -345,7 +341,32 @@ function openHelpRequestBlocks() {
             },
             {
                 "type": "input",
+                "block_id": "category",
+                "element": {
+                    "type": "static_select",
+                    "placeholder": {
+                        "type": "plain_text",
+                        "text": "Select a category",
+                        "emoji": true
+                    },
+                    "options": [
+                        option('Work Allocation', 'wa'),
+                        option('Hearings'),
+                        option('Case Flags', 'flags'),
+                        option('Case Linking', 'linking'),
+                    ],
+                    "action_id": "category"
+                },
+                "label": {
+                    "type": "plain_text",
+                    "text": "Capability",
+                    "emoji": true
+                }
+            },
+            {
+                "type": "input",
                 "block_id": "references",
+                "optional": true,
                 "element": {
                     "type": "plain_text_input",
                     "action_id": "references",
@@ -357,40 +378,6 @@ function openHelpRequestBlocks() {
                 "label": {
                     "type": "plain_text",
                     "text": "References"
-                }
-            },
-            {
-                "type": "input",
-                "block_id": "ccdReferences",
-                "optional": true,
-                "element": {
-                    "type": "plain_text_input",
-                    "action_id": "ccdReferences",
-                    "placeholder": {
-                        "type": "plain_text",
-                        "text": "CCD case references..."
-                    }
-                },
-                "label": {
-                    "type": "plain_text",
-                    "text": "CCD Case References"
-                }
-            },
-            {
-                "type": "input",
-                "block_id": "rcReferences",
-                "optional": true,
-                "element": {
-                    "type": "plain_text_input",
-                    "action_id": "rcReferences",
-                    "placeholder": {
-                        "type": "plain_text",
-                        "text": "RC references.."
-                    }
-                },
-                "label": {
-                    "type": "plain_text",
-                    "text": "RC References"
                 }
             },
             {
