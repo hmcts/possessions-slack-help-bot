@@ -385,21 +385,13 @@ function openHelpRequestBlocks() {
                 "block_id": "environment",
                 "optional": true,
                 "element": {
-                    "type": "static_select",
+                    "type": "plain_text_input",
+                    "action_id": "environment",
                     "placeholder": {
                         "type": "plain_text",
-                        "text": "Choose an environment",
+                        "text": "Environment URL",
                         "emoji": true
                     },
-                    "options": [
-                        option('AAT / Staging', 'staging'),
-                        option('Preview / Dev', 'dev'),
-                        option('Production'),
-                        option('Perftest / Test', 'test'),
-                        option('ITHC'),
-                        option('N/A', 'none')
-                    ],
-                    "action_id": "environment"
                 },
                 "label": {
                     "type": "plain_text",

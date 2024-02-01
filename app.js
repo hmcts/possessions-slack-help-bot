@@ -366,7 +366,7 @@ app.view('create_help_request', async ({ ack, body, view, client }) => {
             category: view.state.values.category.category.selected_option.text.text,
             priority: view.state.values.priority.priority.selected_option.text.text,
             references: view.state.values.references?.references?.value || "None",
-            environment: view.state.values.environment.environment.selected_option?.text.text || "None",
+            environment: view.state.values.environment?.environment?.value || "None",
             description: view.state.values.description.description.value,
             analysis: view.state.values.analysis.analysis.value,
             replicateSteps: view.state.values.replicateSteps.replicateSteps.value,
