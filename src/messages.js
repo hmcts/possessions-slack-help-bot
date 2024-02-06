@@ -350,10 +350,10 @@ function openHelpRequestBlocks() {
                         "emoji": true
                     },
                     "options": [
-                        option('Work Allocation', 'wa'),
+                        option('Work Allocation', 'WA'),
                         option('Hearings'),
-                        option('Case Flags', 'flags'),
-                        option('Case Linking', 'linking'),
+                        option('Case Flags', 'Flags'),
+                        option('Case Linking', 'Linking'),
                     ],
                     "action_id": "category"
                 },
