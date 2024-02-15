@@ -339,7 +339,7 @@ app.shortcut('launch_shortcut', async ({ shortcut, body, ack, context, client })
 function extractLabels(values) {
     const priority = `priority-${values.priority.priority.selected_option.value}`
     const team = `team-${values.team.team.selected_option.value}`
-    const category = `${values.category.category.selected_option.value}`
+    const category = `category-${values.category.category.selected_option.value}`
     return [priority, team, category];
 }
 
